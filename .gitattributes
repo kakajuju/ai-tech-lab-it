@@ -1,0 +1,10 @@
+# 줄바꿈을 LF로 통일 — Windows(core.autocrlf)에서도 Prettier 검사와 diff가 일관되도록
+* text=auto eol=lf
+
+# 바이너리
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
