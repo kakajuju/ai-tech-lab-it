@@ -11,6 +11,8 @@
   --muted: #a8b3c7;
   --font: 'Manrope', 'Noto Sans KR', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
   --mono: 'DM Mono', monospace;
+  /* 최소 글자 크기 — 읽히는 텍스트는 이보다 작게 쓰지 않음 (장식용 aria-hidden 그림 제외) */
+  --fs-min: 12px;
 }
 
 * {
@@ -97,7 +99,7 @@ a {
 .main-nav a,
 .header-cta {
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: var(--fs-min);
   letter-spacing: 0.12em;
   color: #c3ccda;
   transition: color 0.2s;
@@ -158,7 +160,7 @@ a {
   padding-top: 56px;
 }
 .eyebrow {
-  font: 500 11px/1.4 var(--mono);
+  font: 500 var(--fs-min)/1.4 var(--mono);
   letter-spacing: 0.17em;
   color: var(--green);
   margin: 0 0 24px;
@@ -233,7 +235,7 @@ a {
   gap: 12px;
   margin-top: 53px;
   color: #8090a9;
-  font: 10px var(--mono);
+  font: var(--fs-min) var(--mono);
   letter-spacing: 0.14em;
 }
 .note-line {
@@ -483,7 +485,7 @@ a {
   bottom: 27px;
   left: 0;
   color: #73839a;
-  font: 9px var(--mono);
+  font: var(--fs-min) var(--mono);
   letter-spacing: 0.16em;
   display: flex;
   align-items: center;
@@ -726,7 +728,7 @@ a {
   display: flex;
   justify-content: space-between;
   color: var(--green);
-  font: 10px var(--mono);
+  font: var(--fs-min) var(--mono);
   letter-spacing: 0.13em;
 }
 .blue-kicker {
@@ -756,7 +758,7 @@ a {
   gap: 7px;
 }
 .tag-list span {
-  font-size: 10px;
+  font-size: var(--fs-min);
   color: #b6c2d2;
   border: 1px solid #ffffff14;
   padding: 5px 9px;
@@ -768,7 +770,7 @@ a {
   margin-top: 25px;
   padding-top: 18px;
   border-top: 1px solid #ffffff12;
-  font-size: 11px;
+  font-size: var(--fs-min);
   font-weight: 600;
 }
 .course-link span {
@@ -821,7 +823,7 @@ a {
   background: #a68cff0b;
 }
 .benefit-index {
-  font: 9px var(--mono);
+  font: var(--fs-min) var(--mono);
   letter-spacing: 0.12em;
   color: #7e8da2;
   margin: 0 0 9px;
@@ -880,7 +882,7 @@ a {
 }
 .tech-index {
   color: #738197;
-  font: 10px var(--mono);
+  font: var(--fs-min) var(--mono);
 }
 .tech-item b {
   font-size: 15px;
@@ -888,7 +890,7 @@ a {
 }
 .tech-desc {
   color: #718198;
-  font: 9px var(--mono);
+  font: var(--fs-min) var(--mono);
   letter-spacing: 0.1em;
 }
 .tech-arrow {
@@ -938,7 +940,7 @@ a {
 .contact-inner small {
   display: block;
   color: #77869b;
-  font-size: 10px;
+  font-size: var(--fs-min);
 }
 .site-footer {
   background: #080b14;
@@ -955,7 +957,7 @@ a {
 }
 .footer-main > p {
   color: #8996a8;
-  font-size: 11px;
+  font-size: var(--fs-min);
   margin: 0;
 }
 .footer-links {
@@ -963,14 +965,14 @@ a {
   display: flex;
   gap: 23px;
   color: #a5afbd;
-  font-size: 11px;
+  font-size: var(--fs-min);
 }
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   padding: 21px 0;
   color: #637187;
-  font: 9px var(--mono);
+  font: var(--fs-min) var(--mono);
   letter-spacing: 0.1em;
 }
 
@@ -1031,7 +1033,7 @@ a {
     display: none;
   }
   .header-cta {
-    font-size: 10px;
+    font-size: var(--fs-min);
     padding: 8px 11px;
   }
   .hero,
@@ -1046,7 +1048,7 @@ a {
     padding: 0;
   }
   .hero .eyebrow {
-    font-size: 9px;
+    font-size: var(--fs-min);
     letter-spacing: 0.12em;
     margin-bottom: 18px;
   }
@@ -1064,12 +1066,12 @@ a {
   .button {
     height: 46px;
     padding: 0 13px;
-    font-size: 11px;
+    font-size: var(--fs-min);
     gap: 9px;
   }
   .hero-note {
     margin-top: 30px;
-    font-size: 8px;
+    font-size: var(--fs-min);
   }
   .hero-visual {
     width: 370px;
@@ -1210,7 +1212,7 @@ a {
   }
   .footer-main > p {
     grid-column: 1;
-    font-size: 10px;
+    font-size: var(--fs-min);
   }
   .footer-links {
     grid-column: 2;
@@ -1218,14 +1220,14 @@ a {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    font-size: 10px;
+    font-size: var(--fs-min);
   }
   .footer-bottom {
     display: flex;
     flex-direction: column;
     gap: 8px;
     padding: 17px 0;
-    font-size: 8px;
+    font-size: var(--fs-min);
   }
 }
 
